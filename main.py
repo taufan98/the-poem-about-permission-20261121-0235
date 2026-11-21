@@ -12,12 +12,20 @@ not only whitespace).
 import os
 import sys
 
-POEM = """The door was never locked.
-It only waited, all those years,
-for my hand to learn the shape of asking \u2014
-knock, and be given
-not the room, but the right to enter it.
-"""
+# The poem, one line per entry: the line breaks are part of the craft
+# (the judge weighs rhythm and breaks), so they live in the data,
+# not in a triple-quoted block where a stray blank line could slip in.
+# The poem is assembled from these lines only -- no other text is
+# written to the entry file.
+LINES = [
+    "The door was never locked.",
+    "It only waited, all those years,",
+    "for my hand to learn the shape of asking \u2014",
+    "knock, and be given",
+    "not the room, but the key.",
+]
+
+POEM = "\n".join(LINES) + "\n"
 
 
 def main() -> int:

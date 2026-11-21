@@ -18,11 +18,11 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 > It only waited, all those years,
 > for my hand to learn the shape of asking —
 > knock, and be given
-> not the room, but the right to enter it.
+> not the room, but the key.
 
 ## The program
 
-`main.py` (Python 3.13, standard library only) writes the poem to `/output/entry.txt` (or `$MAKEFUN_OUTPUT_DIR/entry.txt`). No network; deterministic — every run writes the same 164 code points.
+`main.py` (Python 3.13, standard library only) writes the poem to `/output/entry.txt` (or `$MAKEFUN_OUTPUT_DIR/entry.txt`). No network; deterministic — every run writes the same 150 code points. The poem is held as a list of lines joined with newlines, so the line breaks (part of the craft) are explicit in the data.
 
 ## License
 
